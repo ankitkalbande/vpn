@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CA_ADDRESS="/var/CA"
+CA_DIR_NAME="openvpn-ca"
+VAR_LOCATION="files/vars"
+FILE_LOCATION="files"
+

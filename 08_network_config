@@ -1,0 +1,11 @@
+#!/bin/bash
+ . variables
+cp $FILE_LOCATION/sysctl.conf  /etc/sysctl.conf
+sysctl -p
+cp $FILE_LOCATION/before.rules /etc/ufw/before.rules
+cp $FILE_LOCATION/ufw /etc/default/ufw
+
+ufw allow 443/tcp
+ufw allow OpenSSH
+ufw disable
+ufw --force enable

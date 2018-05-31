@@ -1,0 +1,11 @@
+#!/bin/bash
+ . variables
+gunzip -c /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz | sudo tee /etc/openvpn/server.conf
+cp $FILE_LOCATION/server.conf  /etc/openvpn/server.conf
+cd $CA_ADDRESS/$CA_DIR_NAME
+source vars
+cd keys
+cp ca.crt ca.key server.crt server.key ta.key dh2048.pem /etc/openvpn
+
+
+

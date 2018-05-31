@@ -1,0 +1,5 @@
+#!/bin/bash
+ . variables
+
+cp $VAR_LOCATION $CA_ADDRESS/$CA_DIR_NAME/vars
+

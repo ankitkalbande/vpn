@@ -1,0 +1,8 @@
+#!/bin/bash
+ . variables
+cp $FILE_LOCATION/build-key-server $CA_ADDRESS/$CA_DIR_NAME/build-key-server
+cd $CA_ADDRESS/$CA_DIR_NAME
+source vars
+./build-key-server server
+./build-dh
+openvpn --genkey --secret keys/ta.key

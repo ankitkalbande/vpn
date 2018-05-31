@@ -1,0 +1,8 @@
+#!/bin/bash
+ . variables
+cp $FILE_LOCATION/build-ca $CA_ADDRESS/$CA_DIR_NAME/build-ca
+cd $CA_ADDRESS/$CA_DIR_NAME
+source vars
+./clean-all
+./build-ca
+

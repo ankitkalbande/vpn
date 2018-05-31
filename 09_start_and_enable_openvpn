@@ -1,0 +1,6 @@
+#!/bin/bash
+ . variables
+service openvpn start
+service  openvpn status
+ip addr show tun0
+service  openvpn enable

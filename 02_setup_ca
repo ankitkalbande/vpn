@@ -1,0 +1,5 @@
+#!/bin/bash
+. variables
+mkdir -p $CA_ADDRESS
+make-cadir  $CA_ADDRESS/$CA_DIR_NAME
+
